@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "HAZ024.github.io",
+			"path": "../../../Appie.Hub/HAZ024.github.io"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio Website Abdelilah"
+	}
+}

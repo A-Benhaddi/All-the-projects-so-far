@@ -1,0 +1,834 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(255, 1, 1, 0.949) 0%, rgb(255, 242, 0) 35%, rgb(255, 242, 0) 100%);
+}
+/* .moon{
+    height: 10px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+label {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    display: block;
+    background: white;
+    border-radius: 200px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+label:after{
+    content: "";
+  width:180px;
+   height: 180px;
+   position: absolute;
+  top:10px;
+  left:10px;
+   background: linear-gradient(188deg, #ffcc89, #d8860b);
+   border-radius: 180px;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+}
+input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input:checked + label{
+    background: black;
+}
+
+label:active:after{
+    width: 260px;
+}
+.background{
+    width: 100%;
+    height: 620vh;
+    background: linear-gradient(to top right, #0000ff 0%, #ffffff 90%);    color: black;
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+}
+input:checked + label + .background{
+    background: black;
+} */
+nav{
+    width: 99%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+    .idk{
+    width: 100px;
+    height: 120px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+.nav-logo{
+    height: 100px;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+p{
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+.menu{
+   width: 20%;
+   height: 140px;
+   display: flex;
+   justify-content: space-around;
+   align-items:center;
+   align-content: center;
+}
+.push{
+    width: 25%;
+}
+/* Hier is mijn main */
+main{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Nunito', sans-serif;
+   background-image: radial-gradient(circle, red, rgb(255, 242, 0), rgb(255, 242, 0));
+}
+/* Hier is mijn main */
+.intro-container{
+    width: 100%;
+    height: 49%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.introductie{
+width: 60%;
+height: 550px;
+display: flex;
+align-items: flex-end;
+margin-left: 10px;
+font-size: 70px;
+}
+.subintroductie{
+width: 16%;
+height: 538px;
+display: flex;
+align-items: flex-end;
+font-size: 31px;
+}
+.push4{
+    width: 200px;
+    height: 200px;
+}
+.ik-container{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+.ik-titel{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.ik-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 297px;
+}
+.ik{
+    text-align: left;
+    width: 33%;
+    height: 288px;
+}
+.push2{
+    width: 200px;
+    height: 200px;
+}
+.wolk{
+    width: 100px;
+    height: 100px;
+    background: burlywood;
+}
+.container{
+    padding: 2rem;
+}
+.hobbys{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* height */
+::-webkit-scrollbar {
+    height: 15px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: yellow; 
+}
+/* mijn slider */
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img {
+    scroll-snap-align:start;
+    object-fit: cover;
+    flex: 1 0 100%
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+/* mijn slider */
+
+.push3{
+    width: 60%;
+    height: 200px;
+}
+.container-uitleg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+.uitleg-hobbys{
+    width: 70%;
+    height: 100px;
+    font-size: 20px;
+}
+.process-container1{
+    width: 100%;
+    height: 125%;
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.process{
+    width: 94%;
+    height: 200px;
+    display: flex;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.process-container2{
+    height: 218px;
+    width: 100%;
+    display: flex;
+}
+.process-container3{
+    height: 218px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+.opmaak{
+    height: 200px;
+    width: 27%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.tekst-opmaak{
+    height: 141px;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.tekst-opmaak1{
+    height: 152px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.programmeren{
+    height: 200px;
+    width: 27%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.basis-ict{
+    height: 200px;
+    width: 27%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.tekst-opmaak2{
+    height: 146px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.button-container{
+height: 50vh;
+width: 80%;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+.push5{
+    width: 10px;
+    height: 200px;
+}
+.uitleg{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.button {
+    height: 81px;
+    width: 200px;
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 60px;
+}
+.button-tekts{
+    display: flex;
+    height: 1px;
+    width: 200px;
+    font-size: medium;
+    justify-content: center;
+}
+.contact-container{
+    height: 600px;
+    width: 100%;
+}
+.contact-titel{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    font-size: 45px;
+}
+.contact{
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    
+}
+.opmaak-telefonisch{
+    height: 100px;
+    width: 17%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.phone-container{
+    height: 60px;
+    width: 100px;
+}
+.tekst-telefonisch{
+    height: 47px;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tekst-whatsapp{
+    height: 59px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.whatsapp-container{
+    height: 60px;
+    width: 100px;
+}
+.opmaak-whatsapp{
+    height: 100px;
+    width: 17%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.socail-media{
+    height: 41%;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+.socailmedia-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+height: 22%;
+width: 75%;
+}
+.links{
+    height: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+}
+.push1{
+    height: 50px;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255, 1, 1, 0.949) 0%, rgb(241, 179, 8) 35%, rgb(255, 242, 0) 100%);
+}
+.footer-container{
+    width: 100%;
+    height: 150px;
+}
+.push6{
+    width: 30%;
+}
+.menu2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 140px
+ }
+.menu-links2{
+    width: 20%;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+ }
+@media only screen and (max-width: 600px){
+body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        width: 97%;
+        height: 12vh;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Hedvig Letters Sans', sans-serif;
+        background: linear-gradient(180deg, rgba(255, 1, 1, 0.949) 0%, rgb(241, 179, 8) 35%, rgb(255, 242, 0) 100%);}
+    .push{
+        width: 10%;
+        height: 10%;
+    }
+    .logo{
+        width: 10%;
+        height: 1%;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .nav-logo{
+        width: 82px;
+        height: 80px;
+    }
+    .menu{
+       width: 70vw;
+       height: 140px;
+       display: flex;
+       justify-content: space-around;
+       align-items:center;
+       align-content: center;
+       color: black;
+    }
+    /* Hier is mijn main */
+    main{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       background-image: radial-gradient(circle, red, rgb(255, 242, 0), rgb(255, 242, 0));
+    }
+    /* Hier is mijn main */
+    .intro-container{
+        width: 100vw;
+        height: 49vh;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+    }
+    .introductie{
+    width: 30vw;
+    height: 55vh;
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+    }
+    .subintroductie{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+    }
+    .push4{
+        width: 10vw;
+        height: 10vh;
+    }
+    .ik-container{
+        width: 100%;
+        height: 40vh;
+        background-color: orange;
+    }
+    .ik-titel{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    .ik-container1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 28vh;
+    }
+    .ik{
+        font-size: 10px;
+        width: 65vw;
+        height: 25vh;
+    }
+    .push2{
+        width: 200px;
+        height: 40px;
+    }
+    .wolk{
+        width: 100px;
+        height: 100px;
+        background: burlywood;
+        
+    }
+    .container{
+        padding: 2rem;
+    }
+    .slider-wrapper{
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+    .slider{
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior:smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;    
+    }
+    .slider img {
+        scroll-snap-align:start;
+        object-fit: cover;
+        flex: 1 0 100%
+    }
+    .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+    .slider-nav a:hover{
+        opacity: 1;
+    }
+    .push3{
+        width: 200px;
+        height: 100px;
+    }
+    .process-container1{
+        width: 99%;
+        height: 100%;
+        display: flex;
+        color: black;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .process{
+        width: 94%;
+        height: 120px;
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .process-container2{
+        height: 218px;
+        width: 100%;
+        display: flex;
+    }
+    .process-container3{
+        height: 310px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .opmaak{
+        height: 48%;
+        width: 42%;
+        display: flex;
+        background-color: orange;
+        border-radius: 10px;
+        align-items: center;
+    }
+    .tekst-opmaak{
+        height: 112px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .tekst-opmaak1{
+        height: 158px;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .programmeren{
+        height: 200px;
+        width: 42%;
+        display: flex;
+        background-color: orange;
+        border-radius: 10px;
+        align-items: center;
+    }
+    .basis-ict{
+        height: 147px;
+        width: 42%;
+        display: flex;
+        background-color: orange;
+        border-radius: 10px;
+        align-items: center;
+    }
+    .tekst-opmaak2 {
+        height: 140px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .programmas{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        background-color: orange;
+        border-radius: 10px;
+        align-items: center;
+    } 
+.introdutie{
+        width: 40vh;
+        height: 50vh;
+        display: flex;
+        align-items: flex-end;
+        font-size: 12px;
+        }
+.button-container{
+            height: 50vh;
+            width: 58vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+}
+.button {
+    height: 10vh;
+    width: 60vw;
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 60px;
+}
+.button-tekts{
+    display: flex;
+    height: 1vh;
+    width: 40vw;
+    font-size: medium;
+    justify-content: center;
+}
+.contact-container{
+    height: 85vh;
+    width: 100%;
+}
+.push6{
+    width: 30%;
+}
+.menu2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 140px
+ }
+.menu-links2{
+    width: 66%;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+ }
+ .opmaak-telefonisch{
+    height: 100px;
+    width: 52%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.phone-container{
+    height: 60px;
+    width: 100px;
+}
+.tekst-telefonisch{
+    height: 47px;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tekst-whatsapp{
+    height: 59px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.whatsapp-container{
+    height: 60px;
+    width: 100px;
+}
+.opmaak-whatsapp{
+    height: 100px;
+    width: 52%;
+    display: flex;
+    background-color: orange;
+    border-radius: 10px;
+    align-items: center;
+}
+.uitleg-hobbys {
+    width: 70%;
+    height: 74%;
+    font-size: 20px;
+}
+}
